@@ -1,0 +1,153 @@
+/* style1.css */
+
+
+/* import Poppins Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
+}
+
+.wrapper {
+    background: whitesmoke;
+    width: 380px;
+    padding: 40px 30px 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 10px 18px lightyellow;
+}
+
+.wrapper header {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.wrapper form {
+    margin: 40px 0;
+}
+
+form .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        margin-left: 0;
+    }
+    20%,
+    80% {
+        margin-left: -12px;
+    }
+    40%,
+    60% {
+        margin-left: 12px;
+    }
+}
+
+form .field .input-area {
+    position: relative;
+}
+
+form input {
+    height: 30px;
+    width: 310px;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    border-bottom-width: 2px;
+}
+
+form .field.error input {
+    border-color: #dc3545;
+}
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+}
+
+form .field i {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field .icon {
+    left: 15px;
+    color: #bfbfbf;
+}
+
+form .field .error-icon {
+    right: 15px;
+    color: dc3545;
+}
+
+form .field .error-txt {
+    margin-top: 5px;
+    color: #dc3545;
+    text-align: left;
+}
+
+form .field .error {
+    display: none;
+}
+
+form .field.error .error {
+    display: block;
+}
+
+form .pass-link {
+    text-align: left;
+    margin-top: -10px;
+}
+
+.wrapper a {
+    color: #5373F0;
+    text-decoration: none;
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+}
+
+form input[type="submit"] {
+    margin-top: 30px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #5372F0;
+    transition: background 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2c52ed;
+}
+
+#cname {
+    color: purple;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

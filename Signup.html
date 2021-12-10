@@ -1,0 +1,84 @@
+<!--Signup.html-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #back {
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+        }
+        
+        #back:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        body {
+            background-color: rgb(126, 182, 126);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <center>Registration</center>
+        </div>
+        <hr>
+        <form action="index.html" onsubmit="signedup()">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name<span id="star">*</span></span>
+
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">User-Name<span id="star">*</span></span>
+                    <input type="text" placeholder="Enter User-name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email<span id="star">*</span></span>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Mobile Number<span id="star">*</span></span>
+                    <input type="number" placeholder="Mobile Number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password<span id="star">*</span></span>
+                    <input type="password" placeholder="Enter your Password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password<span id="star">*</span></span>
+                    <input type="password" placeholder="Confirm your password" required>
+                </div>
+            </div>
+
+
+            <div class="gender">
+                <p><b>Select the gender:</b></p>
+                <input type="radio" name="gender" checked>Male<br>
+                <input type="radio" name="gender">Female<br>
+                <input type="radio" name="gender">Prefer not to say<br>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Sign up">
+            </div>
+            <a href="index.html" id="back"><i class="far fa-hand-point-left"></i>Back</a>
+        </form>
+    </div>
+
+    <script>
+        function signedup() {
+            alert("Account Created Successfully!!");
+        }
+    </script>
+</body>
+
+</html>

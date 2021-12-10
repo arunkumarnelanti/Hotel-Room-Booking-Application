@@ -1,0 +1,104 @@
+<!--Delhi.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NR Stays New Delhi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(119, 228, 222);
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="index.html">
+                    NR Stays New Delhi...
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="Homepage.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          LOCATION 
+                        </a>
+                        <div class="dropdown-menu">
+                            <center>
+                                <a class="dropdown-item" href="Hyderabad.html">HYDERABAD</a><br>
+                                <a class="dropdown-item" href="Chennai.html">CHENNAI</a><br>
+                                <a class="dropdown-item" href="Banglore.html">BANGLORE</a><br>
+                            </center>
+                        </div>
+                    </li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    <li><a href="index.html">LOG OUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--body starts here-->
+    <div class="container"><br><br><br><br>
+        <div class="card" style="width:400px">
+            <img class="card-img-top img-rounded" src="DELHI1.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">HOTEL MOON PALACE DX</h4>
+                <p class="card-text">Location:- Near New Delhi Railway station, New Delhi.</p>
+                <p class="card-text">Prize:- ₹1699</p>
+                <div class="btn">
+                    <button type="submit" onclick="Booked()">BOOK HOTEL</button>
+                </div>
+            </div>
+        </div><br><br><br>
+        <div class="card" style="width:400px">
+            <img class="card-img-top img-rounded" src="DELHI2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">HOTEL WOODLAND DX</h4>
+                <p class="card-text">Location:- Near New Delhi Railway Station, Karol Bagh, New Delhi.</p>
+                <p class="card-text">Prize:- ₹2127</p>
+                <div class="btn">
+                    <button type="submit" onclick="Booked()">BOOK HOTEL</button>
+                </div>
+            </div>
+        </div><br><br><br>
+    </div><br>
+    <!--body ends here-->
+
+    <!--Footer starts here-->
+    <div class="foot">
+        <div class="container">
+            <div class="text">
+                Copyright - © <a href="https://github.com/arunkumarnelanti" target="_blank">Nelanti Arun Kumar.</a> Rights Reserved
+            </div>
+        </div>
+    </div>
+    <!--Footer ends here-->
+    <!--script for booking hotel starts here-->
+    <script>
+        function Booked() {
+            alert("Booking for the Hotel Processed...");
+            alert("Booking Confirmed!")
+        }
+    </script>
+    <!--script for booking hotel ends here-->
+</body>
+
+</html>
